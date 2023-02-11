@@ -1,0 +1,31 @@
+
+spring:
+  data:
+    cassandra:
+      keyspace-name: main
+      username: tpzCmsHGrSveUWyQYSoLuAxh
+      password: 9l3ker0zJKwLCSB7svNN0Q,eK7Lm7pPS-3EPFrwJDbJ_RrQB3nfP4vkS51LdLqhFTq3,rDNsZD6_NMS0FMLhMGFqx+PMaQ4TcdgqKItt6fW7GMoPyG8o,6bxauJ4QdQP
+      schema-action: recreate-drop-unused
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+  application:
+    name: betterreads
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Iv1.dc764d1d66316a61
+            client-secret: c38f19209a07f2b9263df3a72de7ad0bd7027a0f
+
+datastax.astra:
+  secure-connect-bundle: secure-connect.zip
+
+astra.db:
+    id: 5c9938b0-7021-495c-b474-429ceaba5a45-1
+    region: europe-west1
+    keyspace: main
+    application.token: AstraCS:tpzCmsHGrSveUWyQYSoLuAxh:ad6d4a6b372de0f049ac609c505f8be6a36a89666f1f24233b0e0416ec9d149c
